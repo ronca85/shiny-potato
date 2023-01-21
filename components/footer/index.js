@@ -6,8 +6,9 @@ export function Footer() {
     <footer className={s.footer}>
       <div className="layout-block">
         <h2>
-          <Link href="mailto:contact@studiofreight.com">mail</Link>
-          <Link href="/contact">contact</Link>
+          <Link href="mailto:contact@studiofreight.com">mail</Link> ...
+          <Link href="/privacy-policy">privacy policy</Link> ...
+          <Link href="/contact">contact</Link> ...
           <Link href="https://twitter.com/studiofreight">twitter</Link>
         </h2>
       </div>

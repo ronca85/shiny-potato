@@ -24,7 +24,8 @@ export const Header = forwardRef((_, ref) => {
           menu
         </button>
         <div>
-          <Link href="/">home</Link>/<Link href="/gsap">gsap</Link>/
+          <Link href="/">home</Link> ...
+          <Link href="/gsap">gsap</Link> ...
           <Link href="/contact">contact</Link>
         </div>
       </div>

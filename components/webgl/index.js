@@ -15,7 +15,7 @@ function Demo() {
   const ref = useRef()
 
   useFrame(() => {
-    ref.current.rotation.x = ref.current.rotation.y += 0.01
+    // ref.current.rotation.x = ref.current.rotation.y += 0.01
   })
 
   return (
@@ -27,7 +27,7 @@ function Demo() {
           onPointerOver={() => console.log('hover')}
           onPointerOut={() => console.log('unhover')}
         >
-          <boxGeometry attach="geometry" args={[1, 2, 1]} />
+          <boxGeometry attach="geometry" args={[1, 1, 1]} />
           <meshNormalMaterial attach="material" />
         </mesh>
       </e.group>
@@ -47,6 +47,7 @@ export function WebGL({ onLoad = () => {} }) {
   useEffect(() => {
     project.ready.then(() => {
       sheet.sequence.play({ iterationCount: Infinity })
+      window.sheet = sheet
     })
   }, [])
 
